@@ -1,0 +1,16 @@
+{
+  "name": "spotifyauthentication",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Untitled-1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "express": "^4.18.1",
+    "querystring": "^0.2.1"
+  }
+}

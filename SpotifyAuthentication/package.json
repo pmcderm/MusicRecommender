@@ -2,7 +2,7 @@
   "name": "spotifyauthentication",
   "version": "1.0.0",
   "description": "",
-  "main": "Untitled-1.js",
+  "main": "Authentification.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

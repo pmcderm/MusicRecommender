@@ -15,7 +15,7 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="f84481c403ec4569a9ee6a
                                                scope="user-library-read"))
 
 # Retrieve ALL saved tracks, 50 at a time
-retrieve_tracks = sp.current_user_saved_tracks(50,1,None)
+retrieve_tracks = sp.current_user_saved_tracks(50,0,None)
 saved_tracks = retrieve_tracks['items']
 while retrieve_tracks['next']:
     retrieve_tracks = sp.next(retrieve_tracks)

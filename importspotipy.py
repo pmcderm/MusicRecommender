@@ -1,14 +1,16 @@
+#!/usr/bin/env python3
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import string
 import random
 from IPython.display import display
 import pandas as pd
+import os
 import numpy as np
 
 # Authorization
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id="f84481c403ec4569a9ee6ab6959629e6",
-                                               client_secret="4997dd3a43ee41adbf7b3d87c1e9479a",
+                                               client_secret=os.environ["SPOTIFY_DEV_CLIENT_SECRET"],
                                                redirect_uri="http://localhost:8888/callback/",
                                                state=''.join(random.choices(string.ascii_uppercase +
                              string.digits, k=16)),

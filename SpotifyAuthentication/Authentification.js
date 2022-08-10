@@ -3,9 +3,8 @@ const crypto = require('crypto');
 const querystring = require('querystring');
 const client_id = 'f84481c403ec4569a9ee6ab6959629e6';
 const redirect_uri = 'http://localhost:8888/callback/';
-const client_secret = '4997dd3a43ee41adbf7b3d87c1e9479a'
+const client_secret = process.env.SPOTIFY_DEV_CLIENT_SECRET;
 const port = 8888
-
 const app = express();
 
 app.get('/login', function(req, res) {
